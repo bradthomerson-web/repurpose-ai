@@ -8,12 +8,8 @@ st.set_page_config(page_title="Repurpose.ai Pro", page_icon="⚡")
 st.title("⚡ Repurpose.ai (Pro)")
 st.subheader("Turn Video, Audio, or Text into Strategy.")
 
-# --- LOGIN ---
-api_key = st.text_input("Step 1: Paste your API Key here:", type="password")
-
-if not api_key:
-    st.warning("👈 Paste your key above to start.")
-    st.stop()
+# Load the key from the cloud secrets
+api_key = st.secrets["GOOGLE_API_KEY"]
 
 genai.configure(api_key=api_key)
 
