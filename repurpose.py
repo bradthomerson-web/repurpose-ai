@@ -92,3 +92,5 @@ with tab2:
 
 st.markdown("---")
 st.caption("Powered by Gemini 2.5 Multimodal")
+st.success("Liked this strategy? I can help you execute it.")
+st.link_button("👉 Book a 15-Min Strategy Call with Bradley", "https://calendly.com/bradthomerson/30min")
